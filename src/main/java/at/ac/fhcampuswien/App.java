@@ -6,22 +6,47 @@ public class App {
 
     //todo Task 1
     public void sayHelloWorld(){
-        // input your solution here
+        System.out.println("Hello World!");
     }
 
     //todo Task 2
     public void helloRobot(){
-        // input your solution here
+        System.out.println("0123456789012345678901" + System.lineSeparator() +
+                "         __" + System.lineSeparator() +
+                " _(\\    |@@|" + System.lineSeparator() +
+                "(__/\\__ \\--/ __" + System.lineSeparator() +
+                "   \\___|----|  |   __" + System.lineSeparator() +
+                "       \\ }{ /\\ )_ / _\\" + System.lineSeparator() +
+                "       /\\__/\\ \\__O (__" + System.lineSeparator() +
+                "      (--/\\--)    \\__/" + System.lineSeparator() +
+                "      _)(  )(_" + System.lineSeparator() +
+                "     `---''---`");
     }
 
     //todo Task 3
     public void sumOfLiterals(){
-        // input your solution here
+        char a = 'Z';
+        int b = 0xface;
+        long c = 80L;
+        float d = 44e-1f;
+        float e = 5.5f;
+        double f = 8.88e1;
+        double g = 99.9;
+        int h = 012;
+        int sum = (int)a + b + (int)c + (int)d + (int)e + (int)f + (int)g + h;
+        System.out.println(sum);
+
     }
 
     //todo Task 4
     public void addTwoNumbers(){
-        // input your solution here
+        Scanner readme = new Scanner(System.in);
+        int n1, n2, n3;
+        n1 = readme.nextInt();
+        n2 = readme.nextInt();
+        n3 = n1 + n2;
+        System.out.println(n3);
+
     }
 
     //todo Task 5
