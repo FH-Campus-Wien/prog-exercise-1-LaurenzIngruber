@@ -51,32 +51,103 @@ public class App {
 
     //todo Task 5
     public void swapTwoNumbers(){
-        // input your solution here
+        Scanner scanner = new Scanner(System.in);
+        int x, y;
+        System.out.println("Before Swap:");
+        System.out.print("x: ");
+        x = scanner.nextInt();
+        System.out.print("y: ");
+        y = scanner.nextInt();
+        x = x + y;
+        y = x - y;
+        x = x - y;
+        System.out.println("After Swap:");
+        System.out.println("x: " + x);
+        System.out.println("y: " + y);
+
     }
 
     //todo Task 6
     public void compareTwoNumbers(){
-        // input your solution here
+        Scanner scanner = new Scanner(System.in);
+        int n1;
+        int n2;
+        System.out.print("n1: ");
+        n1 = scanner.nextInt();
+        System.out.print("n2: ");
+        n2 = scanner.nextInt();
+
+        if(n1 > n2) System.out.println("n1 > n2");
+        if(n2 > n1) System.out.println("n2 > n1");
+        if(n1==n2) System.out.println("n1 == n2");
+
     }
 
     //todo Task 7
     public void ratingSalesPerson(){
-        // input your solution here
+        Scanner scanner = new Scanner(System.in);
+        int U;
+        System.out.print("Enter annual Revenue: ");
+        U = scanner.nextInt();
+
+        if(U < 0) System.out.println("Invalid Revenue");
+        if(U >= 100000) System.out.println("Invalid Revenue");
+        if(0 <= U && U < 20000) System.out.println("Poor Sales Revenue");
+        if(20000 <= U && U < 50000) System.out.println("Average Sales Revenue");
+        if(50000 <= U && U <80000) System.out.println("Good Sales Revenue");
+        if(80000 <= U && U <100000) System.out.println("Excellent Sales Revenue");
+
+
     }
 
     //todo Task 8
     public void getCommissionRate(){
-        // input your solution here
+        System.out.print("Enter CommissionClass: ");
+        Scanner scanner = new Scanner(System.in);
+        int provision = scanner.nextInt();
+        switch(provision){
+            case 1:
+                System.out.println("Your Commission Rate was set to 0.01");
+                break;
+            case 2:
+                System.out.println("Your Commission Rate was set to 0.02");
+                break;
+            case 3:
+                System.out.println("Your Commission Rate was set to 0.03");
+                break;
+            case 4:
+                System.out.println("Your Commission Rate was set to 0.04");
+                break;
+            default:
+                System.out.println("Your Commission Rate was set to 0.0");
+
+        }
+
     }
 
     //todo Task 9
     public void leapyear(){
-        // input your solution here
+        Scanner scanner = new Scanner(System.in);
+        int a;
+        System.out.print("Year: ");
+        a = scanner.nextInt();
+
+        if(a % 4 == 0 && a % 400 == 0) System.out.println("Leapyear");
+        else {System.out.println("Not a Leapyear");}
+
     }
 
     //todo Task 10
     public void transposedNumbers(){
-        // input your solution here
+        System.out.print("Number: ");
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        int b = a/100;
+        int c = a/10 % 10;
+        int d = a % 10;
+        int e = d*100 + c*10 + b*1;
+        System.out.println(e);
+
     }
 
 
